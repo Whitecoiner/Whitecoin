@@ -31,7 +31,7 @@ The software automatically finds other nodes to connect to.  You can
 enable Universal Plug and Play (UPnP) with your router/firewall
 or forward port 
 
-15714 (TCP) to your computer so you can receive
+15814 (TCP) to your computer so you can receive
 incoming connections.  Whitecoin works without incoming connections,
 but allowing incoming connections helps the Whitecoin network.
 
