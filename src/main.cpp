@@ -959,10 +959,19 @@ int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
         nSubsidy = rand * COIN;
     }
     
-	else if(nHeight > CUTOFF_HEIGHT)
+	else if(nHeight < CUTOFF_HEIGHT)
+	{
+		nSubsidy = 30000 * COIN;
+	}
+	else if(nHeight < 16000)
 	{
 		return nMinSubsidy + nFees;
 	}
+	else if(nHeight < 36000)
+	{
+		nSubsidy = 30000 * COIN;
+	}
+
 
 	
      
